@@ -1,5 +1,5 @@
 """Andrea Cocco 2020
-Chapter 3 Exercise 2 from the book:
+Chapter 3 Exercise 1 from the book:
 
 Think Python, 2nd Edition
 by Allen Downey
