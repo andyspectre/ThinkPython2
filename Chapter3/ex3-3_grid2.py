@@ -1,12 +1,27 @@
-"""Andrea Cocco 2020
-Chapter 3 Exercise 3-2 from the book:
+# Andrea Cocco 2020
+# Chapter 3 Exercise 3-2 from the book:
+#
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+#
+# Note: This exercise should be done using only the statements
+# and other features we have learned so far.
 
-Think Python, 2nd Edition
-by Allen Downey
-http://thinkpython2.com
-
-2. Write a function that draws a similar grid with four rows and four columns. (See previous exercise)
-"""
+# Write a function that draws a similar grid (previous exercise) with four rows and four columns
+# 
+# Previous exercise grid:
+# + - - - - + - - - - +
+# |         |         |
+# |         |         |
+# |         |         |
+# |         |         |
+# + - - - - + - - - - +
+# |         |         |
+# |         |         |
+# |         |         |
+# |         |         |
+# + - - - - + - - - - +
 
 def do_four(f):
     do_twice(f)
