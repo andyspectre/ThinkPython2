@@ -1,17 +1,16 @@
-"""Andrea Cocco 2020
-Chapter 5 Exercise 5-1 from the book:
-    
-Think Python, 2nd Edition
-by Allen Downey
-http://thinkpython2.com
-
-The time module provides a function, also named time, that returns the current 
-Greenwich Mean Time in “the epoch”, which is an arbitrary time used as a reference point. 
-On UNIX systems, the epoch is 1 January 1970.
-
-Write a script that reads the current time and converts it to a time of day in 
-hours, minutes, and seconds, plus the number of days since the epoch.
-"""
+# Andrea Cocco 2020
+# Chapter 3 Exercise 3-2 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+# 
+# The time module provides a function, also named time, that returns the current 
+# Greenwich Mean Time in "the epoch", which is an arbitrary time used as a reference point. 
+# On UNIX systems, the epoch is 1 January 1970.
+# 
+# Write a script that reads the current time and converts it to a time of day in 
+# hours, minutes, and seconds, plus the number of days since the epoch.
 
 import time
 
