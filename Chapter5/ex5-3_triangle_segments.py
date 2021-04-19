@@ -1,4 +1,18 @@
-#! usr/bin/env python3
+# Andrea Cocco 2020
+# Chapter 5 Exercise 3 from the book:
+#   
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+
+# 1. Write a function named is_triangle that takes three
+# integers as arguments, and that prints either "Yes" or "No", depending
+# on whether you can or cannot form a triangle from sticks with the
+# given lengths.
+# 2. Write a function that prompts the user to input three stick
+# lengths, converts them to integers, and uses is_triangle to
+# check whether sticks with the given lengths can form a triangle.
+
 
 def is_triangle(a,b,c):
     """Check if, given the lenght of three segments a, b, c, 
