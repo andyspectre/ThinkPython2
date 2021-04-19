@@ -1,4 +1,13 @@
-#! /usr/bin/env python3
+# Andrea Cocco 2020
+# Chapter 6 Exercise 2 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+
+# Write a function named ack that evaluates the Ackermann function.
+# Use your function to evaluate ack(3, 4), which should be 125.
+# What happens for larger values of m and n?
 
 def ack(m, n):
     """Computes the Ackermann function
