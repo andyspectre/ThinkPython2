@@ -29,8 +29,6 @@ def ack(m, n):
     elif m > 0 and n > 0:
         return ack(m-1, ack(m, n-1))
 
-
-
 def ask_values():
     """Prompt the user to enter the values"""
     x = input('Insert first non-negative integer and press enter: ')
@@ -49,4 +47,3 @@ def quit():
         ask_values()
 
 ask_values()
-
