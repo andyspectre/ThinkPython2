@@ -11,8 +11,8 @@
 
 def ack(m, n):
     """Computes the Ackermann function
-    n, m: non-negative integers"""
-
+    n, m: non-negative integers
+    """
     if not isinstance(m, int):
         print('Ackermann function is defined for non-negative integers values')
         return None
