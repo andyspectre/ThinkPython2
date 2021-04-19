@@ -1,5 +1,5 @@
 # Andrea Cocco 2020
-# Chapter 5 Exercise 5-2 from the book:
+# Chapter 5 Exercise 2 from the book:
 #   
 # Think Python, 2nd Edition
 # by Allen Downey
