@@ -1,4 +1,14 @@
+# Andrea Cocco 2020
+# Chapter 6 Exercise 4 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
 
+# Write a function called is_power that takes parameters a and b
+# and returns True if a is a power of b.
+# Note: you will have to think about the base case.
+    
 def is_power(a, b):
     """Check if a is a power of b"""
     if  a > b:
