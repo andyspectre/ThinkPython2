@@ -1,4 +1,14 @@
-#! usr/bin/env python3
+# Andrea Cocco 2020
+# Chapter 6 Exercise 5 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+
+# Write a function called gcd that takes parameters a and b
+# and returns their greatest common divisor.
+# Credit: This exercise is based on an example from Abelson and
+# Sussman’s Structure and Interpretation of Computer Programs.
 
 def gcd(a, b):
     """Compute the greatest common divisor of a and b"""
