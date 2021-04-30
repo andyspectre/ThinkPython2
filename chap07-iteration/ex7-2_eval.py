@@ -5,9 +5,9 @@
 # by Allen Downey
 # http://thinkpython2.com
 #
-Write a function called eval_loop that iteratively
-prompts the user, takes the resulting input and evaluates
-it using eval, and prints the result. It should continue until the user enters 'done'.
+# Write a function called eval_loop that iteratively
+# prompts the user, takes the resulting input and evaluates
+# it using eval, and prints the result. It should continue until the user enters 'done'.
 
 def ask_user():
     val = input('Insert a value, enter "done" to exit: ')
