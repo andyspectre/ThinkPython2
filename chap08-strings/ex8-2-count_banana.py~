@@ -1,3 +1,0 @@
-fruit = 'banana'
-
-fruit.count('a')
