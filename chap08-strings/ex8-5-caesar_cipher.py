@@ -1,3 +1,15 @@
+# Andrea Cocco 2020
+# Chapter 8 Exercise 5 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+#
+# Write a function called rotate_word that takes a string and an integer
+# as parameters, and returns a new string that contains the letters 
+# from the original string rotated by the given amount.
+# You might want to use the built-in functions ord and chr.
+
 import string 
 
 def rotate_s(s, n):
