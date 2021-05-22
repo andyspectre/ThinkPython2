@@ -7,6 +7,9 @@
 #
 # Write a function that reads a txt file and builds a 
 # list with one element per word. 
+#
+# For this exercise I have used this list from Daniel Miessler Github:
+# https://github.com/danielmiessler/SecLists/blob/master/Passwords/2020-200_most_used_passwords.txt 
 
 def mylist(f):
     myli = []
