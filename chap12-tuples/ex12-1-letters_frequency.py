@@ -12,6 +12,9 @@
 from operator import itemgetter
 
 def myli(s):
+    """Take a string s, call most_frequent(s) to create a dictionary
+    and then put the values in an ordered list of tuples.
+    """
     words = most_frequent(s)
 
     li = []
@@ -21,6 +24,11 @@ def myli(s):
     return sorted(li, key=itemgetter(0), reverse=True) 
 
 def most_frequent(s):
+    """Take a string s and return a dictionary in which the
+    key-value pairs are letter-number where letter is every
+    letter in the string and number is how many times that letter
+    appears.
+    """
     d = dict()
     for letter in s:
         d[letter] = d.get(letter,0) + 1
@@ -44,6 +52,7 @@ s4 = """Een datastructuur is in de informatica een manier waarop de elementen
 (in dit verband ook wel componenten, delen of items genoemd) van een 
 samengestelde variabele samenhangen."""
 
+print("Italian:")
 frequency = (myli(s0))
 for n in frequency:
     print(n)
@@ -51,6 +60,7 @@ for n in frequency:
 print()
 print()
 
+print("English:")
 frequency = (myli(s1))
 for n in frequency:
     print(n)
@@ -58,6 +68,7 @@ for n in frequency:
 print()
 print()
 
+print("German:")
 frequency = (myli(s2))
 for n in frequency:
     print(n)
@@ -65,6 +76,15 @@ for n in frequency:
 print()
 print()
 
+print("Spanish:")
 frequency = (myli(s3))
+for n in frequency:
+    print(n)
+
+print()
+print()
+
+print("Dutch:")
+frequency = (myli(s4))
 for n in frequency:
     print(n)
