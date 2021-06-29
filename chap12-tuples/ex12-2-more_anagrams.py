@@ -1,4 +1,4 @@
-def anagram(s):
+def more_anagrams(s):
     li = []
     for line in s:
         word = line.strip()
@@ -7,17 +7,13 @@ def anagram(s):
 
     d = dict()
     for word in li:
-        if word not in d:
-            d[word] = len(word) 
+        keyes = [len(word)]
+        for key in keyes:
+            if key not in d:
+                d[key] = [word]
+            else:
+                d[len(word)].append(word)
+    return d
 
-    inverse = dict()
-    for key in d:
-        val = d[key]
-        if val not in inverse:
-            inverse[val] = [key]
-        else:
-            inverse[val].append(key)
-    return inverse
-
-fin = open('wordlist.txt')
-print(anagram(fin))
+fin = open("wordliswordlist.txt")
+print(more_anagrams(fin))
