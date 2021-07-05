@@ -14,26 +14,38 @@
 """
 import string
 
+def result(d):
+    r = []
+    for key in d:
+        if len(d[key]) > 1:
+            r.append(d[key])
+    return r
+
 def key_getter(strs):
-    key = [] 
+    key = [0] * 26
     for letter in strs:
         if letter.islower():
             start = ord('a')
         elif letter.isupper():
             start = ord('A')
         position = ord(letter) - start
-        key.append(position)
-    return tuple(key)
-
+        key[position] += 1
+    key = tuple(key)
+    return key
 
 def create_list(strs):
     li = []
+    d = dict()
     for line in strs:
         word = line.strip()
         li.append(word)
-    # return li
+    for word in li:
+        key = key_getter(word)
+        if key not in d:
+            d[key] = [word]
+        else:
+            d[key].append(word)
+    return result(d)
 
-
-
-fin = open("little_anagram_list.txt")
-print(key_getter('tea'))
+fin = open("file.txt")
+print(create_list(fin))
