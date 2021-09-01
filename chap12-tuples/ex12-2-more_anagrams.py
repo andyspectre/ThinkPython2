@@ -1,3 +1,10 @@
+# Andrea Cocco 2020
+# Chapter 12 Exercise 2 from the book:
+#     
+# Think Python, 2nd Edition
+# by Allen Downey
+# http://thinkpython2.com
+#
 """ 1. Read file and initialize a list of strings with it
     2. key_getter(word)
         for each letter of the word:
