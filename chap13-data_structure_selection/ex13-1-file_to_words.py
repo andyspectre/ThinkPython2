@@ -3,7 +3,7 @@
 #     
 # Think Python, 2nd Edition
 # by Allen Downey
-# http://thinkpythimport string
+# http://thinkpython2.com
 
 """Write a program that reads a file, breaks each line into words,
 strips whitespace and punctuation from the words, and converts them 
@@ -24,5 +24,4 @@ for word in read_data:
     if word in string.whitespace:
         read_data = read_data.replace(word, '')
 
-print(read_data.lower())on2.com
-#
+print(read_data.lower())
