@@ -13,3 +13,22 @@ Then modify the program to count the total number of words in the book,
 and the number of times each word is used. Print the number of 
 different words used in the book.
 """
+import string
+
+with open('test.txt', encoding='UTF-8') as f:
+    strippables = string.punctuation + string.whitespace
+    hist = {}    # histogram to track words frequency  
+
+    # replace hypens with spaces
+    for line in f:
+        line = line.replace('-', ' ')
+
+        for word in line.split():
+            word = word.strip(strippables)
+            word = word.lower()
+            # print(word)
+            if word not in hist:
+                hist[word] = 1
+            else:
+                hist[word] += 1
+    print(hist)
