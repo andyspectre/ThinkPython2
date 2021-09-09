@@ -10,19 +10,20 @@ strips whitespace and punctuation from the words, and converts them
 to lowercase.
 """
 
+import string
+
 # get the file
-with open('user_manuals.txt') as f:
-    read_data = f.read()
+with open('test.txt') as f:
+    
+    # stuff that we want to remove
+    strippables = string.punctuation + string.whitespace
 
-# get rid of punctuation
-for word in read_data:
-    if word in string.punctuation:
-        read_data = read_data.replace(word, '')
+    # replace hyphens with spaces
+    for line in f:
+        line = line.replace('-', ' ')
 
-# get rid of whitespaces
-for word in read_data:
-    if word in string.whitespace:
-        read_data = read_data.replace(word, '')
-
-print(read_data.lower())on2.com
-#
+        # remove punctuation, spaces and convert to lowercase
+        for word in line.split():
+            word = word.strip(strippables)
+            word = word.lower()
+            print(word)
