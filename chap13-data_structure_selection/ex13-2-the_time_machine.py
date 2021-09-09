@@ -17,16 +17,19 @@ import string
 
 with open('test.txt', encoding='UTF-8') as f:
     strippables = string.punctuation + string.whitespace
-    hist = {}    # histogram to track words frequency  
+    hist = {}    # histogram to track word frequency  
 
     # replace hypens with spaces
     for line in f:
         line = line.replace('-', ' ')
 
+        # strip punctuation and whitespace and turn lowercase
         for word in line.split():
             word = word.strip(strippables)
             word = word.lower()
             # print(word)
+            
+            # populate histogram
             if word not in hist:
                 hist[word] = 1
             else:
