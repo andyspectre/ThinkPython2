@@ -29,10 +29,7 @@ with open('test.txt', encoding='UTF-8') as f:
             counter += 1
             word = word.strip(strippables)
             word = word.lower()
-            if word not in hist:
-                hist[word] = 1
-            else:
-                hist[word] += 1
+            hist[word] = hist.get(word,0)+1
 
     print('Words frequency:')
     # print histogram values
