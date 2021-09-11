@@ -18,10 +18,10 @@ import string
 with open('test.txt', encoding='UTF-8') as f:
     strippables = string.punctuation + string.whitespace
     hist = {}    # histogram to track words frequency  
-
-    counter = 0    # keep track of total number of words
+    print(type(hist))
 
     # replace hypens with spaces
+    counter = 0
     for line in f:
         line = line.replace('-', ' ')
 
@@ -29,10 +29,15 @@ with open('test.txt', encoding='UTF-8') as f:
             counter += 1
             word = word.strip(strippables)
             word = word.lower()
-            hist[word] = hist.get(word,0)+1
+            hist[word] = hist.get(word, 0) + 1
 
     print('Words frequency:')
-    # print histogram values
-    for i in hist:
-        print(i, ':', hist[i])
+    
+    # create iterator of (value, key) pairs
+    pairs = zip(hist.values(), hist.keys())
+
+    # sort in reverse order and print
+    for i in sorted(pairs, reverse=True):
+        print(i[0], ':', i[1])
+
     print('total number of words:', counter)
