@@ -1,3 +1,4 @@
+""" Find letter frequency in a given string """
 from operator import itemgetter
 
 def myli(s):
