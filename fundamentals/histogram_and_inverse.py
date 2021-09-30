@@ -6,10 +6,7 @@ def histogram(string):
 
     d = dict()
     for letter in string:
-        if letter not in d:
-            d[letter] = 1
-        else:
-            d[letter] += 1
+        d[letter] = d.get(letter, 0) + 1
     return d
 
 def invert_dict(d):
@@ -26,9 +23,6 @@ def invert_dict(d):
 s = "Hello how are you?"
 hist = histogram(s)
 rev = invert_dict(hist)
-
-for k in sorted(hist):
-    print(k, hist[k])
 
 for k in sorted(rev):
     print(k, rev[k])
