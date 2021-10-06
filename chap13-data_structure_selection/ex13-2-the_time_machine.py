@@ -13,31 +13,32 @@ Then modify the program to count the total number of words in the book,
 and the number of times each word is used. Print the number of 
 different words used in the book.
 """
+
 import string
+from operator import itemgetter
+from collections import Counter
 
-with open('test.txt', encoding='UTF-8') as f:
+with open("test.txt", encoding="UTF-8") as f:
     strippables = string.punctuation + string.whitespace
-    hist = {}    # histogram to track words frequency  
-    print(type(hist))
-
-    # replace hypens with spaces
-    counter = 0
+    cnt = Counter()
     for line in f:
-        line = line.replace('-', ' ')
-
         for word in line.split():
-            counter += 1
-            word = word.strip(strippables)
-            word = word.lower()
-            hist[word] = hist.get(word, 0) + 1
+            word = word.strip(strippables).lower()
+            cnt[word] += 1
 
-    print('Words frequency:')
+    words_total = (sum(cnt.values()))
+
+
+    print("Total number of words: ", words_total)
+    print("Total number of different words: ", len(list(cnt)))
+    print()
+    print("Most common 3 words: ")
+
+    for word, freq in(cnt.most_common(3)):
+        print(f"{word:15} ==> {freq:5}")
     
-    # create iterator of (value, key) pairs
-    pairs = zip(hist.values(), hist.keys())
-
-    # sort in reverse order and print
-    for i in sorted(pairs, reverse=True):
-        print(i[0], ':', i[1])
-
-    print('total number of words:', counter)
+    print()
+    print("Word frequency:")
+    
+    for word, freq in sorted(cnt.items(), key=itemgetter(1), reverse=True):
+        print(f"{word:15} ==> {freq:5}")
