@@ -3,7 +3,7 @@
 #     
 # Think Python, 2nd Edition
 # by Allen Downey
-# http://thinkpythimport string
+# http://thinkpython2.com
 
 """Go to Project Gutenberg and download your favorite out-of-copyright
 book in plain text format. Modify your program from the previous exercise
