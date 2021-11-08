@@ -27,3 +27,4 @@ for i in range(100):
     cnt[histogram(string)]+=1
 
 print(cnt)
+# test
