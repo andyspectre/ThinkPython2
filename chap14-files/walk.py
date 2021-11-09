@@ -11,7 +11,6 @@ to print the names of the files in a given directory and its subdirectories.
 """
 
 import os
-from os.path import join, getsize
 for root,dirs,files in os.walk('c:/users/andre/git'):
     print()
     print(root)
