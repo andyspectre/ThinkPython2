@@ -6,7 +6,7 @@
 # http://thinkpython2.com
 #
 
-from anagrams import key_getter 
+import anagrams
 
-s1 = "post"
-print(key_getter(s1))
+with open("names.txt") as f:
+    print(anagrams.create_list(f))
