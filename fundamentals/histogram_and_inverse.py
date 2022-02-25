@@ -24,5 +24,5 @@ s = "Hello how are you?"
 hist = histogram(s)
 rev = invert_dict(hist)
 
-for k in sorted(rev):
-    print(k, rev[k])
+for key in sorted(rev):
+    print(key, ':', ' '.join(rev[key]))
