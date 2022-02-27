@@ -5,21 +5,10 @@
 # by Allen Downey
 # http://thinkpython2.com
 #
-"""
-    1. Read file and initialize a list of strings with it
-    2. key_getter(word)
-        for each letter of the word:
-            get its equivalent unicode number 
-            put it in a tuple called key
-    3. more_anagrams(tuple, word):
-           initialize dictionary
-           if tuple is not in dictionary:
-               key is the tuple and value is word
-           else:
-               add word to that key
-        key = tuple with numeric representation of the letters of the strings
-        value = list of words that match that key
-"""
+# *******************************************
+# Get a list of anagrams from a list of words 
+# *******************************************
+
 import string
 
 def result(d):
@@ -35,9 +24,9 @@ def result(d):
     for i in r:
         print(i)
 
-  # ----------------------------
+  # -----------------------------------------
   # Alternative method instead of signature()
-  # ----------------------------
+  # -----------------------------------------
   #  def key_getter(strs):
   #  # Return a tuple of "markers" that mark which letters
   #  # appear in a string. These markers will be the keyes of a dictionary
