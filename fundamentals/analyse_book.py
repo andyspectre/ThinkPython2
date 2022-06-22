@@ -1,4 +1,27 @@
-""" Count total number of words and word frequency in a file. """
+"""
+Count total number of words, total number of different words and word frequency in a file. 
+
+Output example:
+
+Total number of words:  166
+Total number of different words:  119
+
+Most common 3 words:
+druso           ==>     7
+per             ==>     5
+come            ==>     4
+
+Word frequency:
+druso           ==>     7
+per             ==>     5
+come            ==>     4
+e               ==>     4
+nel             ==>     4
+del             ==>     4
+14              ==>     3
+ma              ==>     3
+[...]
+"""
 
 import string
 from operator import itemgetter
